@@ -1,0 +1,67 @@
+
+/*------------------------------*/
+/* #CUSTOM PROPERTIES */
+/*------------------------------*/
+
+:root {
+
+/* -----COLOR-PALETTE------ */
+
+/* Primary */
+--primary100: #FE5B55;
+--primary200: #FFE8E7;
+
+/* Secondary */
+--secondary100: #FB9332;
+--secondary200: #FDB26F;
+--secondary300: #FFEEDF;
+
+/* Neutrals */
+--neutral100: #ffffff;
+--neutral200: #bfbfbf;
+--neutral300: #7f7f7f;
+--neutral400: #404040;
+--neutral500: #000000;
+
+
+/* Background */
+--bg01: #FFF9F9; 
+--bg02:  #232323;
+
+
+/*---------TYPOGRAPHY-------- */
+
+/* Font-Sizes */
+/* Font Sizing with Rem Units */
+--ff-Alegreya-sans: 'Alegreya Sans', sans-serif;
+--fs-1: 0.625rem;  /*10px*/
+--fs-2: 0.75rem;   /*12px*/
+--fs-3: 0.875rem;  /*14px*/
+--fs-4: 1rem;      /*16px (base)*/
+--fs-5: 1.125rem;  /*18px*/
+--fs-6: 1.25rem;   /*20px*/
+--fs-7: 1.5rem;    /*24px*/
+--fs-8: 1.875rem;  /*30px*/
+--fs-9: 2rem;      /*32px*/
+
+/* Font-Weight */
+--fw-100: 100;
+--fw-100: 300;
+--fw-100: 400;
+--fw-100: 500;
+--fw-100: 700;
+--fw-100: 800;
+
+/* border-radius */
+--b-radius-6: 6px;
+--b-radius-10: 10px;
+--b-radius-12: 12px;
+--b-radius-15: 15px;
+}
+
+
+
+/*------------------------------*/
+/* #REUSED STYLES */
+/*------------------------------*/
+
