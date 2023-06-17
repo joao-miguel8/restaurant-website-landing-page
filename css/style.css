@@ -1,6 +1,6 @@
 
 /*------------------------------*/
-/* #CUSTOM PROPERTIES */
+/* #CUSTOM PROPERTIES  1. */ 
 /*------------------------------*/
 
 :root {
@@ -23,6 +23,8 @@
 --neutral400: #404040;
 --neutral500: #000000;
 
+/* Box-Shadows */
+  --b-shadow01: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
 /* Background */
 --bg01: #FFF9F9; 
@@ -46,22 +48,160 @@
 
 /* Font-Weight */
 --fw-100: 100;
---fw-100: 300;
---fw-100: 400;
---fw-100: 500;
---fw-100: 700;
---fw-100: 800;
+--fw-300: 300;
+--fw-400: 400;
+--fw-500: 500;
+--fw-700: 700;
+--fw-800: 800;
 
-/* border-radius */
+/* Border-Radius */
 --b-radius-6: 6px;
 --b-radius-10: 10px;
 --b-radius-12: 12px;
 --b-radius-15: 15px;
+
+
+/* PureCSS favors em for its default widths instead of px to support zooming on webpages */
+/* break-points: */
+/*  35.5em;   < 568xpx */
+/*  48em;   >= 768px */
+/*  64em;   >= 1024px */
+/*  80em;   >= 1280px */
+/*  120em;   >= 1920px */
+/*  160em;   >= 2560px */
+/*  240em;   >= 3840px */
 }
 
 
 
+
+
 /*------------------------------*/
-/* #REUSED STYLES */
+/* #GLOBAL STYLES 2. */
 /*------------------------------*/
+
+/*------------------------------*/
+/* #PAGE LAYOUT 3. */
+/*------------------------------*/
+
+/*------------------------------*/
+/* #FORMS 4. */
+/*------------------------------*/
+
+
+
+
+.header-wrapper-mobile-menu {
+  color: var(--neutral500);
+  font-size: var(--fs-7);
+  transition: 1s all;
+}
+
+
+/*------------------------------*/
+/* #HEADER */
+/*------------------------------*/
+
+.header {
+  box-shadow: var(--b-shadow01);
+  position: fixed;
+  display: flex;
+  width: 100vw;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.navbar-link {
+  color: var(--neutral100);
+  font-family: var(--ff-Alegreya-sans);
+  font-weight: var(--fw-100);
+  font-size: var(--fs-5);
+}
+
+.main-navigation-logo {
+font-family: var(--ff-Alegreya-sans);
+font-size: var(--fs-4);
+font-weight: var(--fw-700);
+}
+
+
+/* **** mobile toggling menu **** */
+
+button.main-navigation__mobile-menu {
+  background: none;
+  z-index: 9999;
+  color: var(--primary100);
+  font-size: var(--fs-5);
+}
+
+
+.main-navigation__menu{
+  background: rgb(33, 33, 33);
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 30px;
+  width: clamp(200px, 40%, 360px);
+  height: 100%;
+  padding: 20px;
+  transform: translateX(100%); 
+  transition: .7s ease-in-out;
+  cursor: pointer;
+}
+
+.main-navigation__menu[data-visible="true"] {
+  transform: translateX(0%);
+  transition: .7s ease-in-out;
+}
+
+.navbar-login {
+  background: var(--primary100);
+  color: var(--neutral100);
+  border-radius: var(--b-radius-10);
+  font-family: var(--ff-Alegreya-sans);
+  font-weight: var(--fw-500);
+  font-size: var(--fs-4);
+  padding: 10px 28px;
+}
+
+/* **** **** **** */
+
+
+
+
+/*------------------------------*/
+/* #MAIN CONTENT 5. */
+/*------------------------------*/
+
+
+
+/*------------------------------*/
+/* #FOOTER 5. */
+/*------------------------------*/
+
+
+
+
+
+
+/*------------------------------*/
+/* #MEDIA-QUERIES */
+/*------------------------------*/
+
+/* Small devices such as large phones (576px and up) */
+/* @media only screen and (min-width: 35.5em) {
+} */
+
 
