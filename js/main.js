@@ -12,8 +12,8 @@ const menuNavListEle = document.querySelector(".main-navigation__menu")
 
 /*------------------------------*/
 /* #EVENT LISTENERS: */
-/*------------------------------*/
 
+/*------------------------------*/
 mobileMenuBtn.addEventListener("click", toggleMobileMenu)
 
 
