@@ -16,7 +16,6 @@
 --secondary200: #FDB26F;
 --secondary300: #FFEEDF;
 
-
 /* Neutrals */
 --neutral100: #ffffff;
 --neutral200: #bfbfbf;
@@ -87,9 +86,6 @@
 /*------------------------------*/
 /* #FORMS 5. */
 /*------------------------------*/
-
-
-
 
 
 
@@ -230,8 +226,9 @@ main {
   text-align: center;
   max-width: 150px;
   padding: 6px 10px;
-  border-radius: var(--b-radius-6);
+  border-radius: var(--b-radius-5);
   margin: 0 0 6px 0;
+  font-size: var(--fs-4);
 }
 
 .hero h1{
@@ -310,7 +307,7 @@ main {
 }
 
 .card__feedback-rating {
-font-size: var(--fs-3);
+font-size: var(--fs-5);
 color: var(--neutral400);
 margin: 0 0 0 8px;
 display: inline-block;
